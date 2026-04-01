@@ -19,6 +19,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 #STATIC_DIR = os.path.join(BASE_DIR, 'static')
 #MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
@@ -29,6 +30,10 @@ SECRET_KEY = 'django-insecure-&3$6ks(!snr42b(wf91t-y)i69%+!qr4i#gtto0v0c_jmesjb9
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://janekorn-titanic-app-d6bqb8aye3c4gzh8.swedencentral-01.azurewebsites.net"
+]
 
 
 # Application definition
